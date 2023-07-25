@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Annotations" verbose="1" >
+<test name="Run Methods Annotations">
+<classes>
+    <class name="DemoTestNG.ConfigurationAnnotations_1_DatePickers">
+        <methods>
+            <include name="test2_JQuerypDatePicker"/> <!--execute only one method from this class-->
+            <exclude name="test1_BootstrapDatePicker"></exclude> <!--exclude methods-->
+        </methods>
+    </class>
+    <class name="DemoTestNG.ConfigurationAnnotations_2_ListBox"></class> <!--execute all methods from this class-->
+</classes>
+</test>
+</suite>
